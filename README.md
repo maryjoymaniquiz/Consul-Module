@@ -4,7 +4,6 @@ Deploying a Consul cluster on AWS using Terraform.
 
 <b> Prerequisites </b>
  
-  
     Consul
     
     Terraform
@@ -43,17 +42,17 @@ Create an account to HCP
     
 Create a Consul Cluster and select a provider
 
-    AWS – Terraform
+ > AWS – Terraform
 
-    Copy the VPC ID, Route table ID and Subnet ID from your AWS and paste them in the Consul cluster you are creating
+ > Copy the VPC ID, Route table ID and Subnet ID from your AWS and paste them in the Consul cluster you are creating
 
 Autheticate Terraform with HCP
     
-    As we do not have any Service Principal Key, click the Generate service principal and key. Clone the code and paste it on your termina
+ > As we do not have any Service Principal Key, click the Generate service principal and key. Clone the code and paste it on your termina
 
 Create a new terraform file and name it as main.tf 
     
-    Clone the code from the HashiCorp account accordingly and paste it in your file 
+ > Clone the code from the HashiCorp account accordingly and paste it in your file 
     
     
 Install git using the ff command to be able to clone the git repository if it wasn’t installed yet.
@@ -69,9 +68,11 @@ Use terraform apply command to execute the action. It is used to deploy your mod
 
     terraform apply
     
-NOTE: It will take a while. Wait for 10 minutes and it will be successfully applied.
+ > NOTE: It will take a while. Wait for 10 minutes and it will be successfully applied.
 
-After inputting that command, you can now access console via browser by using the HCP:
+
+
+After inputting that command, you can now access Consul via browser by using the HCP:
     
     https://portal.cloud.hashicorp.com
 
